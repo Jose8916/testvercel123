@@ -1,0 +1,228 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #1a1a1a;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #004080, #001a33);
+    color: white;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    padding-bottom: 20px;
+    background: linear-gradient(90deg, #ff8c00, #ffa500);
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.3em;
+    margin: 0 0 20px;
+}
+
+.cta-button {
+    background-color: #ffa500;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #e69500;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ff8c00;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.benefits-container, .features-container, .how-it-works-container, .testimonials-container, .case-studies-container, .faq-container, .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.benefit, .feature, .step, .testimonial, .case-study, .faq-item, .team-member {
+    flex: 1 1 calc(45% - 40px);
+    margin: 10px;
+    padding: 30px;
+    background-color: #262626;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit:hover, .feature:hover, .step:hover, .testimonial:hover, .case-study:hover, .faq-item:hover, .team-member:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.benefit img, .feature img, .step img, .testimonial img, .case-study img, .team-member img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.benefit h3, .feature h3, .step h3, .case-study h3, .faq-item h3, .team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ff8c00;
+}
+
+.benefit p, .feature p, .step p, .testimonial p, .case-study p, .faq-item p, .team-member p {
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Carrusel de Casos de Éxito */
+.case-studies-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.case-studies-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.case-study {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Estilo de la Sección de Contacto */
+.contact-info, .contact form {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+}
+
+.contact form input, .contact form textarea {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact form input::placeholder, .contact form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact form button {
+    background-color: #ffa500;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact form button:hover {
+    background-color: #e69500;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del Footer */
+footer {
+    background-color: #001a33;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid #ffa500;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    background: #ccc; /* Placeholder for interactive map */
+}
+
+/* Media Query para Responsividad */
+@media (max-width: 768px) {
+    .benefit, .feature, .step, .testimonial, .case-study, .faq-item, .team-member {
+        flex: 1 1 100%;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .carousel-control {
+        font-size: 1.2em;
+        padding: 8px;
+    }
+}
